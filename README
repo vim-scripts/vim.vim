@@ -1,0 +1,14 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=119
+
+This script is for those of us who uses embedded scripting language in the here document form.
+see :help perl, :help ruby, :help python, :help tcl
+if you embed a script in vim using the 
+perl<<EOF
+#some perl code
+EOF
+or equivalent for other script languages, the scripts won't be correctly indented.
+Worse, if you write some python this way and reindent your file the whole script is trashed since
+the indentation was meaningfull and it is lost.
+
+This scripts add support for indenting the embedded script.
+Please mail me any problems you encounter with this script
